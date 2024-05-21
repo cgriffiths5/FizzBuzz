@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace FizzBuzzSolid
 {
-    public class Fizz : IFizzBuzzRule
+    public class Buzz : IFizzBuzzRule
     {
         public bool IsValid(int number)
         {
-            return number % 3 == 0;
+            return number % 5 == 0;
         }
 
         public string Print()
