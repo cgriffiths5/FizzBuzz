@@ -14,7 +14,8 @@ namespace FizzBuzzSolid
             {
                 new FizzBuzz(),
                 new Fizz(),
-                new Buzz()
+                new Buzz(),
+                new Number()
             };
         }
 
@@ -32,8 +33,6 @@ namespace FizzBuzzSolid
                         break;
                     } 
                 }
-
-                fizzBuzzList.Add(i.ToString());
             }
 
             return fizzBuzzList;
