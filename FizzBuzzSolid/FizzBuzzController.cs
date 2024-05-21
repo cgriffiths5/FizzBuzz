@@ -22,14 +22,18 @@ namespace FizzBuzzSolid
 
             for (int i = 1; i <= value; i++)
             {
+                var stringNum = i.ToString();
+
                 foreach (var fizzBuzzRule in fizzBuzzRuleList)
                 {
                     if (fizzBuzzRule.IsValid(i))
                     {
-                        Console.WriteLine(fizzBuzzRule.Print());
+                        stringNum = fizzBuzzRule.Print();
                         break;
-                    }
+                    } 
                 }
+
+                Console.WriteLine(stringNum);
             }
         }
     }

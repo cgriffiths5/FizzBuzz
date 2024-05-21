@@ -12,11 +12,11 @@ namespace FizzBuzzSolid
         {
             FizzBuzzController fizzBuzzController = new FizzBuzzController();
 
-            Console.WriteLine("Fizz Buzz Up To 10");
+            Console.WriteLine("Up To 10");
 
             fizzBuzzController.PrintList(10);
 
-            Console.WriteLine("Fizz Buzz Up To 100");
+            Console.WriteLine("Up To 100");
 
             fizzBuzzController.PrintList(100);
 

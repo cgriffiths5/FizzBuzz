@@ -15,7 +15,7 @@ namespace FizzBuzzSolid
 
         public string Print()
         {
-            return "Fizz";
+            return "Buzz";
         }
     }
 }
