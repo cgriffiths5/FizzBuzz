@@ -18,23 +18,25 @@ namespace FizzBuzzSolid
             };
         }
 
-        public void PrintList(int value) {
+        public List<string> PrintList(int value) {
+
+            List<string> fizzBuzzList = new List<string>();
 
             for (int i = 1; i <= value; i++)
             {
-                var stringNum = i.ToString();
-
                 foreach (var fizzBuzzRule in fizzBuzzRuleList)
                 {
                     if (fizzBuzzRule.IsValid(i))
                     {
-                        stringNum = fizzBuzzRule.Print();
+                        fizzBuzzList.Add(fizzBuzzRule.Print());
                         break;
                     } 
                 }
 
-                Console.WriteLine(stringNum);
+                fizzBuzzList.Add(i.ToString());
             }
+
+            return fizzBuzzList;
         }
     }
 }

@@ -14,13 +14,15 @@ namespace FizzBuzzSolid
 
             Console.WriteLine("Up To 10");
 
-            fizzBuzzController.PrintList(10);
+            var result = fizzBuzzController.PrintList(10);
+
+            result.ForEach(r => Console.WriteLine(r));
 
             Console.WriteLine("Up To 100");
 
-            fizzBuzzController.PrintList(100);
+            var secondResult = fizzBuzzController.PrintList(100);
 
-
+            secondResult.ForEach(r => Console.WriteLine(r));
         }
     }
 }
