@@ -1,12 +1,11 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.IO;
+using FizzBuzzSolid;
 
-namespace FizzBuzzSolid
+namespace FizzBuzzTestFile
 {
     [TestClass]
-    public class FizzBuzzSolidTests
+    public class TestFizzBuzz
     {
-        private FizzBuzzController fizzBuzzController;
+        FizzBuzzController fizzBuzzController;
 
         [TestInitialize]
         public void TestInitialize()
@@ -23,12 +22,15 @@ namespace FizzBuzzSolid
         }
 
         [TestMethod]
-        public void FizzBuzzSolidTest_10Results()
+        public void FizzBuzzSolidTest_15Results()
         {
-            var result = fizzBuzzController.PrintList(1);
+            var result = fizzBuzzController.PrintList(15);
 
+            Assert.AreEqual(result[0], "1");
             Assert.AreEqual(result[2], "Fizz");
             Assert.AreEqual(result[4], "Buzz");
+            Assert.AreEqual(result[13], "14");
+            Assert.AreEqual(result[14], "FizzBuzz");
         }
     }
 }
